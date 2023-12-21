@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon" />
+    <!-- Glide js -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700&family=Cinzel:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Checkout</title>
+  </head>
+  <body>
+    <style>
+      #checkoutTable {
+        width: 90%;
+        border-collapse: collapse;
+        margin-top: 100px;
+        font-family: "Buenard", serif;
+        margin-left: 50px;
+      }
+
+      /* Estilos para las filas de encabezado */
+      #checkoutTable thead th {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: left;
+      }
+
+      /* Estilos para las filas pares */
+      #checkoutTable tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      /* Estilos para las filas impares */
+      #checkoutTable tbody tr:nth-child(odd) {
+        background-color: #fff;
+        display: flex;
+      }
+
+      /* Estilos para las celdas */
+      #checkoutTable td {
+        padding: 10px;
+        border: 1px solid #5f1a1a;
+        text-align: center;
+      }
+
+      /* Estilos para las imágenes */
+      #checkoutTable img {
+        max-width: 100px;
+        max-height: 100px;
+      }
+      #checkoutTable tbody {
+        display: flex;
+      }
+      /* Estilos para centrar el contenido de las celdas */
+      #checkoutTable td {
+        align-items: center;
+        justify-content: center;
+      }
+
+    /* Estilos del formulario */
+      h1{
+        font-family: "Cinzel", serif;
+        font-weight: bold;
+        margin-bottom: 25px;
+      }
+    #formulario_compra {
+      font-family: "Buenard", serif;
+      font-size: 25px;
+      width: 100%;
+      position: absolute;
+      margin-top: 100px;
+      display: flex;
+    }
+
+    .envio{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      width: 50%;
+      margin-left: 50px;
+    }
+
+    .pago{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      width: 50%;
+      margin-left: 50px;
+    }
+
+    #formulario_compra input{
+      margin-bottom: 25px;
+    }
+    #formulario_compra select{
+      margin-bottom: 25px;  
+    }
+
+    #formulario_Tarjeta{
+      display: none;
+    }
+
+    #pagar {
+    width: 30%;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color:#e1be58;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 150px;
+    }
+    #paypal{
+      display: none;
+    }
+    #boton_paypal{
+    width: 55%;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color:#8eb5ff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 150px;
+    color:white;
+    
+
+    }
+   
+      .footer-checkout{
+       bottom:0;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <a
+      href="https://api.whatsapp.com/send?phone=622270806&text=Hola%20sean%20Bienvenidos%20a%20la%20Pagina%20Web%20Paw%20Palace"
+      class="float"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html"
+            ><img src="img/logo.jpg" alt="Logo Paw Palace" id="foto_logo"
+          /></a>
+        </div>
+        <ul class="enlaces-menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#tienda">Tienda</a></li>
+          <li><a href="#quienes-somos">Quiénes Somos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <button class="ham" type="button">
+          <span class="br-1"></span>
+          <span class="br-2"></span>
+          <span class="br-3"></span>
+        </button>
+      </nav>
+      <div id="items">
+        <a href="contacto.html">
+          <i class="fa-solid fa-user fa-2x" style="color: #e1be58"></i
+        ></a>
+        <a href="#" class="carrito"
+          ><i class="fa-solid fa-cart-shopping fa-2x" style="color: #e1be58">
+          </i
+        ></a>
+        <a href="#"
+          ><i
+            class="fa-solid fa-magnifying-glass fa-2x"
+            style="color: #e1be58"
+          ></i
+        ></a>
+      </div>
+    </header>
+    <section class="blog-imagen">
+      <img src="img/Newsletter-Wasi.jpg" />
+    </section>
+
+    <table id="checkoutTable">
+      <thead>
+        <tr>
+          <th>Imagen</th>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    
+
+    <section id="formulario_compra">
+      <div class="envio">
+      <h1>Formulario de envío</h1>
+   
+      Nombre <br>
+      <input type="text" id="fomulario_nombre"/><br>
+
+      Apellidos <br>
+      <input type="text" id="fomulario_apellidos" style="width: 350px;" required/><br>
+    
+      Dirección Completa (Calle, Número, Ciudad, CP) <br>
+      <input type="text" id="fomulario_apellidos" style="width: 500px"/> <br>
+
+      Teléfono <br>
+      <input type="tel" id="formulario_telefono"/> <span id="numero_valido" style="color:red"></span><br>
+    </div>
+
+     <div class="pago">
+
+      <h1>Pago</h1>
+      Método de Pago <br>
+      <select name="formulario_pago" id="formulario_pago">
+        <option value="Bizum">Bizum</option>
+        <option value="Tarjeta">Tarjeta</option>
+        <option value="Paypal">Paypal</option>
+        <option value="Contrareembolso">Contrareembolso</option>
+      </select><br>
+      
+      <div id="paypal">
+        <button id="boton_paypal">Pagar con PayPal</button>
+      </div>
+
+      <div id="formulario_Tarjeta">
+      Número de Tarjeta <br>
+      <input type="text" id="fomulario_tarjeta" minlength="16" maxlength="16"/><br>
+      Fecha de Vencimiento <br>
+      <input type="date" id="fecha_vencimiento"/><br>
+      <input type="text" id="codigo_seguridad" minlength="3" maxlength="3" placeholder="Código de Seguridad" style="width: 220px" /><br>
+      </div>
+
+      <button id="pagar">Pagar</button>
+    </div>
+    </section>
+
+     <footer class="footer-checkout">
+      <div class="footer-primera">
+        <a href="index.html"><img src="img/LOGO.jpg" alt="Logo" /></a> <br />
+        <a href="#tienda">Tienda</a> <br />
+        <a href="#quienes-somos">Quienes Somos </a> <br />
+        <a href="">Blog </a> <br />
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div class="footer-segunda">
+        <b>Condiciones legales</b> <br />
+        <a href="/politicas/privacidad.html">Política de privacidad</a> <br />
+        <a href="/politicas/envio.html">Envio, Pago y Garantía</a> <br />
+        <a href="/politicas/privacidad.html">Aviso legal </a> <br />
+      </div>
+
+      <div class="footer-tercera">
+        <b> Envíos </b> <br />
+        <a href="/politicas/reembolso.html">Política de reembolso</a> <br />
+        <a href="politicia-devolucion.html">Condiciones de devolución</a> <br />
+        <a href="envio.html">Condiciones de envío</a>
+      </div>
+
+      <div class="footer-cuarta">
+        <b>¿TE PODEMOS AYUDAR?</b> <br />
+        93 046 45 55 <br />
+        <a href="mailto:contacto@pawpalace.es">contacto@pawpalace.es</a> <br />
+      </div>
+
+      <div class="footer-quinta">
+        <a href="#"
+          ><i class="fa-brands fa-facebook fa-3x" style="color: #e1be58" ;></i
+        ></a>
+        <a href="#"
+          ><i class="fa-brands fa-instagram fa-3x" style="color: #e1be58"></i
+        ></a>
+        <a href="#"
+          ><i class="fa-regular fa-envelope fa-3x" style="color: #e1be58"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Recupera los datos del carrito desde el localStorage
+        const cartData = JSON.parse(localStorage.getItem("cart"));
+
+        // Verifica si hay datos en el carrito
+        if (cartData) {
+          // Accede al elemento donde deseas mostrar la tabla (puedes utilizar una tabla HTML)
+          const checkoutTable = document.getElementById("checkoutTable");
+
+          // Crea una fila para mostrar los datos del producto
+          const row = document.createElement("tr");
+
+          // Crea celdas para cada dato del producto (imagen, precio, cantidad)
+          const imgCell = document.createElement("td");
+          const img = document.createElement("img");
+          img.src = cartData.src;
+          img.alt = "Product Image";
+          img.style.width = "100px";
+          imgCell.appendChild(img);
+
+          const nameCell = document.createElement("td");
+          nameCell.textContent = cartData.name;
+
+          const priceCell = document.createElement("td");
+          priceCell.textContent = `€${cartData.value.toFixed(2)}`;
+
+          const quantityCell = document.createElement("td");
+          quantityCell.textContent = cartData.amount;
+
+          const total = document.createElement("td");
+          total.textContent = `€${(cartData.value * cartData.amount).toFixed(
+            2
+          )}`;
+          // Agrega las celdas a la fila
+          row.appendChild(imgCell);
+          row.appendChild(nameCell);
+          row.appendChild(priceCell);
+          row.appendChild(quantityCell);
+          row.appendChild(total);
+
+          // Agrega la fila a la tabla
+          checkoutTable.appendChild(row);
+        }
+      });
+
+//Telefono correcto
+    let numero_telefono = document.getElementById("formulario_telefono");
+    let validacion = document.getElementById("numero_valido");
+    let regular = /^[67]{1}[0-9]{8}$/;
+
+    function comprobarTelefono() {
+      if (regular.test(numero_telefono.value)){ 
+        validacion.textContent=" ";
+      } else {
+       
+        validacion.textContent="Porfavor, introduzca un número de teléfono válido.";
+      
+      }
+    }
+
+    formulario_telefono.addEventListener("change", comprobarTelefono);
+
+//Formulario Tarjeta y Paypal
+  let selectElement = document.getElementById("formulario_pago");
+  let formularioTarjeta = document.getElementById("formulario_Tarjeta");
+  let boton_paypal = document.getElementById("paypal");
+  let boton_pagar=document.getElementById("pagar");
+
+  // Función para comprobar la selección
+  function comprobarTarjeta() {
+    if (selectElement.value === "Tarjeta") {
+      formularioTarjeta.style.display = "block";
+    } else {
+      formularioTarjeta.style.display = "none";
+    
+    }
+  }
+   
+
+     // Función para pagar con Paypal
+  function pagarPaypal() {
+    if (selectElement.value === "Paypal") {
+      boton_paypal.style.display = "block";
+      boton_pagar.style.display= "none";
+      
+    } else {
+      boton_paypal.style.display = "none";
+    }
+  }
+
+  function botonPagar(){
+    if (selectElement.value === "Bizum" || selectElement.value === "Contrareembolso" || selectElement.value === "Tarjeta") {
+      boton_paypal.style.display = "none";
+      boton_pagar.style.display= "block";
+      
+    }
+  }
+    formulario_pago.addEventListener("change", comprobarTarjeta);
+    formulario_pago.addEventListener("change", pagarPaypal);
+    formulario_pago.addEventListener("change", botonPagar);
+
+
+
+    </script>
+
+    <script src="carrito.js"></script>
+  </body>
+</html>

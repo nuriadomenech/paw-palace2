@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html"
+            ><img src="img/logo.jpg" alt="Logo Paw Palace" id="foto_logo"
+          /></a>
+        </div>
+        <ul class="enlaces-menu">
+          <li><a href="#">Tienda</a></li>
+          <li><a href="#">Quienes Somos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <button class="ham" type="button">
+          <span class="br-1"></span>
+          <span class="br-2"></span>
+          <span class="br-3"></span>
+        </button>
+      </nav>
+      <div id="items">
+        <a href="contacto.html">
+          <i class="fa-solid fa-user fa-2x" style="color: #e1be58"></i
+        ></a>
+        <a href="#"
+          ><i class="fa-solid fa-cart-shopping fa-2x" style="color: #e1be58"></i
+        ></a>
+        <a href="#"
+          ><i
+            class="fa-solid fa-magnifying-glass fa-2x"
+            style="color: #e1be58"
+          ></i
+        ></a>
+      </div>
+    </header>
+    <hr style="margin-top: 110px; border: 2px solid #e1be58">
+    <section></section>
+    <section></section>
+   <section></section>
+   <section></section>
+   <section></section>
+   <section></section>
+    <section class="contacto" id="contacto">
+       <h1>Entrar</h1>
+       <form action="">
+       
+        <label for="usuario">CORREO ELECTRONICO</label>
+        <input type="text" placeholder="Ingresa tu correo electronico" required/>
+        <br>
+        <label for="contrasena" class="contrasenia">CONTRASEÑA   <a href=""><em>¿olvidaste tu contraseña?</em></a></label>
+        <input type="password" placeholder="Contraseña" required/>
+       </form>
+       <div class="botones-contacto">
+       <button class="button-contacto">Registrarse</button>
+     
+       <a href="crearcuenta.html"><button class="button-crear-cuenta" >Crear cuenta</button></a>
+       </div>
+    </section>
+
+       <footer class="footer-contacto">
+    <div class="footer-primera">
+      <a href="index.html"><img src="img/LOGO.jpg" alt="Logo"></a> <br>
+      <a href="#tienda">Tienda</a> <br>
+      <a href="#quienes-somos">Quienes Somos </a> <br>
+      <a href="">Blog </a> <br>
+            <a href="#contacto">Contacto</a>
+    </div>
+
+    <div class="footer-segunda">
+      <b>Condiciones legales</b> <br>
+     <a href="/politicas/privacidad.html">Política de privacidad</a> <br>
+      <a href="/politicas/envio.html">Envio, Pago y Garantía</a> <br>
+      <a href="/politicas/privacidad.html">Aviso legal </a> <br>
+     
+    </div>
+
+    <div class="footer-tercera">
+      <b> Envíos </b>  <br>
+      <a href="/politicas/reembolso.html">Política de reembolso</a> <br>
+      <a href="politicia-devolucion.html">Condiciones de devolución</a> <br>
+      <a href="envio.html">Condiciones de envío</a>
+    </div>
+
+    <div class="footer-cuarta">
+      <b>¿TE PODEMOS AYUDAR?</b> <br>
+      93 046 45 55 <br>
+      <a href="mailto:contacto@pawpalace.es">contacto@pawpalace.es</a> <br>
+      
+
+      
+    </div>
+
+    <div class="footer-quinta">
+      <a href="#"><i class="fa-brands fa-facebook fa-3x" style="color: #e1be58";></i></a>
+      <a href="#"><i class="fa-brands fa-instagram fa-3x" style="color: #e1be58"></i></a>
+      <a href="#"><i class="fa-regular fa-envelope fa-3x" style="color: #e1be58"></i></a>
+    </div>
+
+  </footer>
+
+   <script>
+  window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("abajo",window.scrollY>0);
+		})
+
+     const navBar = document.querySelectorAll(" nav a");
+      const sec = document.querySelectorAll("section");
+
+      function activarMenu() {
+        let len = sec.length;
+        while (--len && window.scrollY + 130 < sec[len].offsetTop) {}
+        navBar.forEach((ltx) => ltx.classList.remove("active"));
+        navBar[len].classList.add("active");
+      }
+
+      activarMenu();
+      window.addEventListener("scroll", activarMenu);
+</script>
+
+    <script
+      src="https://kit.fontawesome.com/71515676e7.js"
+      crossorigin="anonymous"
+    ></script>
+
+   
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700&family=Cinzel:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="/index.css" />
+
+    <title>Paw Palace</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html"
+            ><img src="img/logo.jpg" alt="Logo Paw Palace" id="foto_logo"
+          /></a>
+        </div>
+        <ul class="enlaces-menu">
+          <li><a href="#tienda">Tienda</a></li>
+          <li><a href="#">Quienes Somos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <button class="ham" type="button">
+          <span class="br-1"></span>
+          <span class="br-2"></span>
+          <span class="br-3"></span>
+        </button>
+       
+      </nav>
+      <div id="items">
+        <a href="contacto.html">
+          <i class="fa-solid fa-user fa-2x" style="color: #e1be58"></i
+        ></a>
+
+        <a href="#" class="cartDiv empty" id="cartDiv"
+          ><i
+            class="fa-solid fa-cart-shopping fa-2x"
+            style="color: #e1be58"
+            id="cartIcon"
+          ></i
+        ></a>
+
+        <a href="#"
+          ><i
+            class="fa-solid fa-magnifying-glass fa-2x"
+            style="color: #e1be58"
+          ></i
+        ></a>
+      </div>
+      
+    </header>
+     
+    <hr style="margin-top: 110px; border: 2px solid #e1be58" />
+     <div class="cart-box hide" id="cart-box">
+          <div class="heading">
+            <span>Cart</span>
+          </div>
+          <div class="products" id="products"></div>
+          <div class="checkout" id="checkout">
+            <a href="chekout.html"><button>Checkout</button></a>
+          </div>
+        </div>
+    <section class="descripcion">
+      <!-- imagen 1 -->
+      <div class="product">
+        <div class="img-container">
+          <img
+            id="imageBox"
+            src="img/per-lounger-large-4_1024x1024_1024x1024_34a472bb-bf07-491b-9da1-ddfe32f20300_1024x.jpg"
+            alt=""
+          />
+        </div>
+        <div class="product-small-img">
+          <img
+            src="img/per-lounger-large-4_1024x1024_1024x1024_34a472bb-bf07-491b-9da1-ddfe32f20300_1024x.jpg"
+            onclick="myFuction(this)"
+          />
+
+          <img
+            src="img/31496090_236343130257703_2723524820653309952_n_1080x.jpg"
+            onclick="myFuction(this)"
+          />
+          <img src="img/perrooo.jpg" onclick="myFuction(this)" />
+          <img src="img/large_1080x.jpg" onclick="myFuction(this)" />
+        </div>
+      </div>
+
+      <div class="descripcion-producto">
+        <p class="company">Paw Palace</p>
+        <h1 class="title">Cama Grande de Lujo para Perro (Original)</h1>
+
+        <div class="price">
+          <div class="new-price">
+            <p class="now">€179.00</p>
+          </div>
+          <p class="codigo">SKU:ALPRCPGRO</p>
+        </div>
+        <hr />
+        <br />
+        <div class="showcase-rating">
+          <button class="star">&#9734;</button>
+          <button class="star">&#9734;</button>
+          <button class="star">&#9734;</button>
+          <button class="star">&#9734;</button>
+          <button class="star">&#9734;</button>
+          <p style="color: black">441 opiniones</p>
+        </div>
+        <div class="color-select">
+          <a href="verproductopink.html"><div id="pink"></div></a>
+          <a href="verproductocapuccino.html"><div id="capuccino"></div></a>
+        </div>
+        <div class="relleno">
+          <p>Relleno: Con relleno</p>
+          <button>Con relleno</button>
+        </div>
+        <div class="envio">
+          <img src="img/delivery-truck_2.svg" alt="" />
+          <em
+            >Disponible para entrega inmediata: En 2-3 días en su domicilio.</em
+          >
+        </div>
+        <div class="buttons">
+          <div class="amount-btn">
+            <button id="minus">
+              <img src="img/icon-minus.svg" alt="minus" id="minus" />
+            </button>
+            <input type="number" name="totalItems" id="totalItems" value="1" />
+
+            <button id="plus">
+              <img src="img/icon-plus.svg" alt="plus" id="plus" />
+            </button>
+          </div>
+          <button class="add_btn">
+            <img src="img/icon-cart.svg" alt="cart" />
+            AÑADIR AL CARRITO
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div id="product-container">
+      <section class="product-section active" id="description">
+        <h3>Descripcion del Producto</h3>
+        <p id="description-content">
+          Pon a tu perro en la nube 9 con esta cama de lujo súper suave que
+          amará tu mascota; diseñada para los amantes de los perros . Nuestro
+          equipo australiano de expertos en perros sabe que sus mascotas duermen
+          y se ubican en un círculo, por lo que necesitan una cama de forma
+          circular. Con la comodidad de la exuberante cubierta de piel
+          artificial (lobo ártico), tu mascota consentida puede acurrucarse en
+          el interior, hundirse y adormecerse en paz. ¡Es una vida de perro… de
+          hecho!
+          <br /><br />
+          Para aquellos perros que también duermen al aire libre, simplemente
+          desabrocha la cubierta superior y voila...... tienes un bean bag al
+          aire libre impermeable que es fácil de limpiar y resistente al
+          masticar. Elaborado con nuestro sistema elástico interno especial,
+          Mascota Lounger permite a tu perro ovillarse y sentirse asegurado con
+          la superficie suave y las paredes exteriores.
+          <br /><br />
+          Utilizados como guía por la asociación de perros de Australia, son
+          ideales para todos los perros de tamaño mediano a muy grande, como
+          Golden Retriever, Pastor Alemán, Border Collie, Doberman, Labrador,
+          San Bernardo, Greyhound, Irish Husky etc.
+        </p>
+      </section>
+
+      <section class="product-section" id="specification">
+        <h3>Especificacion</h3>
+        <ul id="specification-content">
+          <!-- Las características se cargarán dinámicamente aquí -->
+        </ul>
+      </section>
+
+      <section class="product-section" id="comments">
+        <h3>Medidas</h3>
+        <ul id="comments-list">
+          <!-- Los comentarios se cargarán dinámicamente aquí -->
+        </ul>
+      </section>
+
+      <section class="product-section" id="reviews">
+        <h3>Cuidado</h3>
+        <ul id="reviews-list">
+          <!-- Las reseñas se cargarán dinámicamente aquí -->
+        </ul>
+      </section>
+    </div>
+
+    <div class="product-main1">
+      <h2 class="title">Productos Relacionados</h2>
+      <div class="product-grid">
+        <div class="showcase">
+          <div class="showcase-banner">
+            <img
+              src="img/ballerina_pink_01_1024x1024_cf1a6856-b307-4d1f-8146-1e70279b8ea6_1024x.jpg"
+              width="300"
+              class="product-img default"
+            />
+            <img
+              src="img/BALLERINAMED2_1080x.jpg"
+              width="300"
+              class="product-img hover"
+            />
+
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <a href="index2.html"
+                  ><ion-icon name="heart-outline"></ion-icon
+                ></a>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <a href="#" class="showcase-category">Paw Palace</a>
+
+            <a href="">
+              <h3 class="showcase-title">
+                Cama Grande de Lujo para Perro (Pink Ltd. Edition)
+              </h3>
+            </a>
+
+            <div class="showcase-rating">
+              <button class="star">&#9734;</button>
+              <button class="star">&#9734;</button>
+              <button class="star">&#9734;</button>
+              <button class="star">&#9734;</button>
+              <button class="star">&#9734;</button>
+            </div>
+
+            <div class="price-box">
+              <p class="price">€199.00</p>
+              <!-- <del>$75.00</del> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="showcase">
+          <div class="showcase-banner">
+            <img
+              src="img/Puppacino_04_1024x1024_8c3491bb-e188-4fd8-bb2c-499fe52196f9_1024x.jpg"
+              width="300"
+              class="product-img default"
+            />
+            <img
+              src="img/Cama_grande_para_perros_cappuccino_1500x.jpg"
+              width="300"
+              class="product-img hover"
+            />
+
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <a href="index2.html"
+                  ><ion-icon name="heart-outline"></ion-icon
+                ></a>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <a href="#" class="showcase-category">Paw Palace</a>
+
+            <a href="">
+              <h3 class="showcase-title">
+                Cama Grande de Lujo para Perro (Cappuccino)
+              </h3>
+            </a>
+
+            <div class="showcase-rating">
+              <button class="star">&#9734;</button>
+              <button class="star">&#9734;</button>
+              <button class="star">&#9734;</button>
+              <button class="star">&#9734;</button>
+              <button class="star">&#9734;</button>
+            </div>
+
+            <div class="price-box">
+              <p class="price">€199.00</p>
+              <!-- <del>$75.00</del> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="showcase">
+          <div class="showcase-banner">
+            <img
+              src="img/cubierta-grande.jpg"
+              width="300"
+              class="product-img default"
+            />
+            <img
+              src="img/cubierta-grande1.jpg"
+              width="300"
+              class="product-img hover"
+            />
+
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <a href="index2.html"
+                  ><ion-icon name="heart-outline"></ion-icon
+                ></a>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <a href="#" class="showcase-category">Paw Palace</a>
+
+            <a href="">
+              <h3 class="showcase-title">
+                Cubierta Deluxe para Cama de Perro Grande (Cappuccino)
+              </h3>
+            </a>
+
+            <div class="showcase-rating">
+              <button class="star">&#9734;</button>
+              <button class="star">&#9734;</button>
+              <button class="star">&#9734;</button>
+              <button class="star">&#9734;</button>
+              <button class="star">&#9734;</button>
+            </div>
+
+            <div class="price-box">
+              <p class="price">€54.00</p>
+              <!-- <del>$75.00</del> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("abajo", window.scrollY > 0);
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/71515676e7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="main.js"></script>
+    <script src="carrito.js"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html"
+            ><img src="img/logo.jpg" alt="Logo Paw Palace" id="foto_logo"
+          /></a>
+        </div>
+        <ul class="enlaces-menu">
+          <li><a href="#tienda">Tienda</a></li>
+          <li><a href="#">Quienes Somos</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <button class="ham" type="button">
+          <span class="br-1"></span>
+          <span class="br-2"></span>
+          <span class="br-3"></span>
+        </button>
+      </nav>
+      <div id="items">
+        <a href="#">
+          <i class="fa-solid fa-user fa-2x" style="color: #e1be58"></i
+        ></a>
+        <a href="#"
+          ><i class="fa-solid fa-cart-shopping fa-2x" style="color: #e1be58"></i
+        ></a>
+        <a href="#"
+          ><i
+            class="fa-solid fa-magnifying-glass fa-2x"
+            style="color: #e1be58"
+          ></i
+        ></a>
+      </div>
+    </header>
+
+    <section class="descripcion">
+      <div class="product">
+        <div class="img-container">
+          <img
+            id="imageBox"
+            src="img/BALLERINAMED2_1080x.jpg"
+            alt=""
+          />
+        </div>
+        <div class="product-small-img">
+          <img
+            src="img/BALLERINAMED2_1080x.jpg"
+            onclick="myFuction(this)"
+          />
+
+          <img
+            src="img/BALLERINAMED3_1080x.jpg"
+            onclick="myFuction(this)"
+          />
+          <img
+            src="img/144895089_164854098521751_2581212715404815162_n_1080x.jpg"
+            onclick="myFuction(this)"
+          />
+          <img src="img/large_1080x.jpg" onclick="myFuction(this)" />
+        </div>
+      </div>
+
+      <div class="descripcion-producto">
+        <p class="company">Paw Palace</p>
+        <h1 class="title">Cama Grande de Lujo para Perro (Original)</h1>
+
+        <div class="price">
+          <div class="new-price">
+            <p class="now">€199.00</p>
+          </div>
+          <p class="codigo">SKU:ALPRCPGRO</p>
+        </div>
+        <hr />
+        <br />
+        <div class="showcase-rating">
+          <button class="star">&#9734;</button>
+          <button class="star">&#9734;</button>
+          <button class="star">&#9734;</button>
+          <button class="star">&#9734;</button>
+          <button class="star">&#9734;</button>
+          <p style="color: black">441 opiniones</p>
+        </div>
+        <p><strong>Tambien disponible en: </strong></p>
+        <div class="color-select">
+            <a href="verproducto.html"><div id="gris"></div></a>
+            <a href="verproductocapuccino.html"><div id="capuccino"></div></a>
+        </div>
+        <div class="relleno">
+          <p>Relleno: Con relleno</p>
+          <button>Con relleno</button>
+        </div>
+        <div class="envio">
+          <img src="img/delivery-truck_2.svg" alt="">
+          <em>Disponible para entrega inmediata: En 2-3 días en su domicilio.</em>
+        </div>
+        <div class="buttons">
+          <div class="amount-btn">
+            <button id="minus">
+              <img src="img/icon-minus.svg" alt="minus" />
+            </button>
+            <p class="amount">0</p>
+            <button id="plus">
+              <img src="img/icon-plus.svg" alt="plus" />
+            </button>
+          </div>
+          <button class="add_btn">
+            <img src="img/icon-cart.svg" alt="cart" />
+            AÑADIR AL CARRITO
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/71515676e7.js"
+      crossorigin="anonymous"
+    ></script>
+
+   
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
